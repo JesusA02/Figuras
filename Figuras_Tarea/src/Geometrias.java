@@ -16,19 +16,19 @@ import java.util.Arrays;
     Circulo[] circulos = new Circulo[4];
 
 
-    circulos[0] = new Circulo(6);
-    circulos[1] = new Circulo(4);
-    circulos[2] = new Circulo(7);
-    circulos[3] = new Circulo(9);
+    circulos[0] = new Circulo(6,0);
+    circulos[1] = new Circulo(4,0);
+    circulos[2] = new Circulo(7,0);
+    circulos[3] = new Circulo(9,0);
     Arrays.sort(rects);
 
     Triangulo[] triangulos = new Triangulo[4];
 
 
-    triangulos[0] = new Triangulo(3.5, 3.8);
-    triangulos[1] = new Triangulo(4.7, 5.2);
-    triangulos[2] = new Triangulo(9.8, 8.1);
-    triangulos[3] = new Triangulo(2.5, 1.9);
+    triangulos[0] = new Triangulo(3.5, 3.8,3);
+    triangulos[1] = new Triangulo(4.7, 5.2,3);
+    triangulos[2] = new Triangulo(9.8, 8.1,3);
+    triangulos[3] = new Triangulo(2.5, 1.9,3);
     Arrays.sort(rects);
 
     }

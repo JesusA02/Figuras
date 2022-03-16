@@ -1,4 +1,4 @@
-public class Rectangulo extends Figura implements Comparable<Rectangulo>{
+public class Rectangulo extends Figura implements Comparable<Figura>{
     private double base;
     private double altura;
     private int lados;
@@ -17,16 +17,27 @@ public class Rectangulo extends Figura implements Comparable<Rectangulo>{
         return lados;
     }
 
-    public int compareTo(Rectangulo rectPorComparar){
+    public int compareTo(Figura rectPorComparar){
         double areaPorComparar = rectPorComparar.calcularArea();
         double miArea = this.calcularArea();
 
-        int misLados = this.returnLados();
+        //int misLados = this.returnLados();
+        
+        if(miArea==areaPorComparar){
 
-        if(miArea==areaPorComparar && misLados == lados ){
-            return 0;
+            int misLados = this.returnLados();
+            if(lados==misLados){
+                return 0;
+            }
+            else if (lados > misLados){
+                return 1;
+            }
+            else{
+                return -1;
+            }
+
         }
-        else if (miArea > areaPorComparar && misLados > lados){
+        else if (miArea > areaPorComparar){
             return 1;
         }
         else{
