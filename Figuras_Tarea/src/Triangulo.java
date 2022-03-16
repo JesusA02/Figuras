@@ -32,7 +32,7 @@ public class Triangulo extends Figura implements Comparable<Figura>{
                 if(lados==misLados){
                     return 0;
                 }
-                else if (lados > misLados){
+                else if (misLados > lados){
                     return 1;
                 }
                 else{
